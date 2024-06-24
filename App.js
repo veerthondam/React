@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+/* 
 const element = React.createElement(
   "div",
   { id: "parent" },
@@ -9,7 +10,7 @@ const element = React.createElement(
     {
       class: "parent",
     },
-    "Hello this is Parent Tag"
+    "Hello this is Parent Tagqqqq"
   ),
   [
     React.createElement(
@@ -36,5 +37,12 @@ const element = React.createElement(
     ),
   ]
 );
+
+*/
+const required = true;
+const imgUrl = "https://www.mapsofindia.com/images2/india-map-2019.jpg";
+const element = <img required={true} src={imgUrl} alt="Description of image" />;
+
+console.log(element);
 const root = ReactDOM.createRoot(document.querySelector("#root"));
 root.render(element);
