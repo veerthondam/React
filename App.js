@@ -1,8 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 const TitleName = "This is Main Heading";
+const TitleName1 = "This is sub Heading";
 
-const Title = () => <h1> {TitleName} </h1>;
+const Title = () => (
+  <h1>
+    {" "}
+    {TitleName} - {TitleName1}{" "}
+  </h1>
+);
 
 const HeaderComponent = () => (
   <div className="container">
