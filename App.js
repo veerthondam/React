@@ -10,6 +10,8 @@ body
 footer
 
 */
+const ImageUrl =
+  "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 const HeaderComponent = () => {
   return (
     <header>
@@ -64,12 +66,14 @@ const BodyComponent = () => (
       <ProductsComponent
         title="Meghana Foods"
         description=" This is a description of Meghana Foods."
-        price="350"
+        price="351"
+        imageId="iivuhjc2mswi9lublktf"
       />
       <ProductsComponent
         title="KFC"
         description=" This is a description for KFC."
         price="600"
+        imageId="tfbnpd65irvhp9iwhbtk"
       />
     </section>
   </main>
@@ -77,14 +81,14 @@ const BodyComponent = () => (
 
 /* Product container */
 const ProductsComponent = (props) => {
-  const { title, description, price } = props;
+  const { title, description, price, imageId } = props;
   //console.log(props);
 
   return (
     <article className="plist">
       <div className="product-item">
         <img
-          src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/tfbnpd65irvhp9iwhbtk"
+          src={`${ImageUrl}${imageId}`}
           alt="Product 1"
           className="product-image"
         />
