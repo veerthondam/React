@@ -5,6 +5,7 @@
     align-items: center;
     box-shadow: 0 15px 40px -20px rgba(40, 44, 63, .15);
     padding: 30px;
+    margin-bottom: 40px;
 }
 
 nav ul{
@@ -41,12 +42,17 @@ nav ul li a {
         height: 100%;
         object-fit: contain;
 }
-
-.plist{
+.product-listing{
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
-    padding: 20px;
+    margin: 0 40px;
+    justify-content: space-between;
+}
+.plist{
+    /* display: flex;
+    flex-wrap: wrap;
+     justify-content: space-around; 
+    padding: 20px; */
 
 }
 .product-item{
@@ -100,6 +106,7 @@ nav ul li a {
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.3s ease;
+    margin-bottom: 12px;
 }
 
 .add-to-cart:hover {
