@@ -1622,7 +1622,7 @@ const BodyComponent = () => (
   <main>
     <section className="product-listing">
       {restList.map((restau) => (
-        <ProductsComponent key={restau.info?.id} resData={restau} />
+        <ProductsComponent resData={restau} />
       ))}
     </section>
   </main>
