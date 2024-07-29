@@ -65,6 +65,7 @@ nav ul li a {
     transition: transform 0.3s ease;
     /* padding: 4px; */
     overflow: hidden;
+    cursor: pointer;
 }
 .product-item:hover {
     transform: scale(1.05);
